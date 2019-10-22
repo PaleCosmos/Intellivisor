@@ -1,14 +1,14 @@
 //
-//  mySwiftExerciseUITests.swift
-//  mySwiftExerciseUITests
+//  IntellivisorUITests.swift
+//  IntellivisorUITests
 //
-//  Created by PaleCosmos on 2019/10/15.
+//  Created by PaleCosmos on 2019/10/22.
 //  Copyright © 2019 PaleCosmos. All rights reserved.
 //
 
 import XCTest
 
-class mySwiftExerciseUITests: XCTestCase {
+class IntellivisorUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
