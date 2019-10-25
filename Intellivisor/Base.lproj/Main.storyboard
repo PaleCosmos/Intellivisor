@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="-625" y="76"/>
         </scene>
-        <!--메모 보기-->
+        <!--메모-->
         <scene sceneID="ckQ-yN-QFt">
             <objects>
                 <viewController id="hzN-us-zNI" customClass="DetailViewController" customModule="Intellivisor" customModuleProvider="target" sceneMemberID="viewController">
@@ -210,7 +210,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tjQ-vM-4cs"/>
                     </view>
-                    <navigationItem key="navigationItem" title="메모 보기" id="vcY-fO-HN5"/>
+                    <navigationItem key="navigationItem" title="메모" id="vcY-fO-HN5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ng4-SC-v4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

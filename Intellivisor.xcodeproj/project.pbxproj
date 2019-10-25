@@ -17,6 +17,7 @@
 		B5C58AF62362CB29005FFA0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C58AF52362CB29005FFA0B /* DetailViewController.swift */; };
 		B5C58AF92362D752005FFA0B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C58AF72362D752005FFA0B /* Model.xcdatamodeld */; };
 		B5C58AFB2362D906005FFA0B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C58AFA2362D906005FFA0B /* DataManager.swift */; };
+		B5C58AFD2362E6CA005FFA0B /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C58AFC2362E6CA005FFA0B /* Usage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B5C58AF52362CB29005FFA0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B5C58AF82362D752005FFA0B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B5C58AFA2362D906005FFA0B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B5C58AFC2362E6CA005FFA0B /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				B5C58AF72362D752005FFA0B /* Model.xcdatamodeld */,
 				B5C58AFA2362D906005FFA0B /* DataManager.swift */,
+				B5C58AFC2362E6CA005FFA0B /* Usage.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				B5C58AEE2362B21A005FFA0B /* MemoTableViewController.swift in Sources */,
 				B5C58AFB2362D906005FFA0B /* DataManager.swift in Sources */,
 				B5AA731B235F3A5200BA3C1A /* AppDelegate.swift in Sources */,
+				B5C58AFD2362E6CA005FFA0B /* Usage.swift in Sources */,
 				B5C58AF02362BA1C005FFA0B /* ComposeViewController.swift in Sources */,
 				B5C58AF92362D752005FFA0B /* Model.xcdatamodeld in Sources */,
 				B5C58AF62362CB29005FFA0B /* DetailViewController.swift in Sources */,

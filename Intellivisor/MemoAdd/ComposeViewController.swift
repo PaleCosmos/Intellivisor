@@ -18,7 +18,12 @@ class ComposeViewController: UIViewController {
     
     
     @IBAction func save(_ sender: Any) {
-        DataManager.shared.addNewMemo(memoTextView?.text)
+        let data = memoTextView?.text ?? ""
+        
+        if(data.isNotBlank())
+        {
+            DataManager.shared.addNewMemo(data)
+        }
         
         dismiss(animated: true, completion: nil)
     }
