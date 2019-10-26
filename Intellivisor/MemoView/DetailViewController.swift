@@ -22,17 +22,21 @@ class DetailViewController: UIViewController {
         return f
     }()
     
+    @IBAction func share(_ sender: Any) {
+        guard let memo = memo?.content else {
+            return
+        }
+        
+        let vc = UIActivityViewController(activityItems: [ memo], applicationActivities: nil)
+        
+        present(vc, animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination.children.first as? ComposeViewController
         {
             vc.editTarget = memo;
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
