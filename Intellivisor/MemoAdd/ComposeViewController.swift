@@ -10,7 +10,10 @@ import UIKit
 
 class ComposeViewController: UIViewController {
     
+    var editTarget: Memo?
+    
     @IBOutlet weak var memoTextView: UITextView!
+    
     
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -20,9 +23,14 @@ class ComposeViewController: UIViewController {
     @IBAction func save(_ sender: Any) {
         let data = memoTextView?.text ?? ""
         
-        if(data.isNotBlank())
-        {
-            DataManager.shared.addNewMemo(data)
+        if let editTarget = editTarget{
+            editTarget.content = data
+            DataManager.shared.saveContext()
+        }else{
+            if(data.isNotBlank())
+            {
+                DataManager.shared.addNewMemo(data)
+            }
         }
         
         dismiss(animated: true, completion: nil)
@@ -31,6 +39,13 @@ class ComposeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let memo = editTarget{
+            navigationItem.title = "메모 편집"
+            memoTextView.text = memo.content
+        }else{
+            navigationItem.title = "새 메모"
+            memoTextView.text = ""
+        }
         
         // Do any additional setup after loading the view.
     }
